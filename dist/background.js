@@ -1,0 +1,1 @@
+console.log(chrome),console.log(chrome.webRequest),chrome.webRequest.onBeforeRequest.addListener((function(e){console.log("Request URL:",e.url),console.log("Request Method:",e.method),console.log("Reqest Body:",e.requestBody)}),{urls:["https://lunatalk.chat/*"]},["requestBody"]);

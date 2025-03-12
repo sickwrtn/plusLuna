@@ -1,6 +1,5 @@
-import { getCookie } from "./functions";
 import { debug } from "./debug";
-import * as interfaces from "../interface/interfaces";
+import { getCookie } from "./functions";
 import * as env from "../.env/env";
 
 //url 리퀘스트 동기처리

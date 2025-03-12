@@ -1,10 +1,10 @@
 const path = require('path');
 
 module.exports = {
-  entry: './source/index.ts', // content_scripts의 진입점 파일
+  entry: {index: './source/content/index.ts',background: './source/background/index.ts'}, // content_scripts의 진입점 파일
   output: {
     path: path.resolve(__dirname, 'dist'), // 번들된 파일이 저장될 경로
-    filename: 'index.js', // 번들된 파일 이름
+    filename: '[name].js', // 번들된 파일 이름
   },
   resolve: {
     extensions: ['.ts', '.js'], // TypeScript 파일 확장자 추가
